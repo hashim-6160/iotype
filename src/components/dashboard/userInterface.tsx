@@ -37,16 +37,15 @@ export default function UserInterface() {
       <main className="p-4 space-y-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           {/* Material Image Card */}
-          <Card className="bg-gray-900 border-0 overflow-hidden">
-            <CardContent className="p-0">
+          <Card className="text-card-foreground rounded-xl shadow-sm bg-zinc-900 border-0 p-0 overflow-hidden flex">
+            <div className="relative w-full h-[300px] flex-grow">
               <Image
                 src="/steel.png"
                 alt="Steel rebar materials"
-                width={400}
-                height={300}
-                className="w-full h-full object-cover"
+                fill
+                className="object-cover"
               />
-            </CardContent>
+            </div>
           </Card>
 
           {/* Submissions Card */}
